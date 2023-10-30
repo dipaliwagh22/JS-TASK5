@@ -1,0 +1,109 @@
+nav{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:8px 5px 8px 2%;
+    margin-bottom:20px;
+    background: #171717;
+    position: sticky;
+    height:50px;
+    top:0;
+}
+ nav .logo{
+    font-size:23px;
+    color:#fff;
+    cursor: pointer;
+}
+ nav .logo h1  span{
+   color:#ffe100;
+   margin-left: 7px;
+   text-decoration: underline;
+
+}
+ nav .right ul{
+    list-style: none;
+}
+ nav .right ul li{
+    display:inline-block;
+    margin:0 5px;
+}
+ nav .right ul li a{
+    color:#fff;
+    text-decoration: none;
+    transition:0.4s;
+}
+ nav .right ul li a:hover{
+    color:#ffe100;
+}
+
+h3{
+    color:#7a1414;
+    margin-left: 10px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.movie-card {
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #e5e5c2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.movie-card img {
+    width: 298px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.movie-card h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #2e1818;
+}
+
+.movie-card p {
+    font-size: 12px;
+    color: hsl(0, 4%, 15%);
+}
+.movie-card i.fa-solid.fa-star {
+    color:#ffe100; 
+}
+.movie-card i.fa-solid.fa-star-half-stroke{
+    color:#ffe100
+}
+.movie-card i.fa-regular.fa-star{
+    color: #989896;
+}
+
+@media screen and (max-width: 500px) {
+    .movie-container{
+       display: inherit;
+    }
+    .movie-card {
+        width:300px
+    }
+    .movie-card img{
+        width:300px;
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  }
+  
